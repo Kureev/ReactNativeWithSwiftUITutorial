@@ -13,6 +13,7 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		A4ECBFB323E5A02F006D1D39 /* SwiftUIButtonManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A4ECBFB223E5A02F006D1D39 /* SwiftUIButtonManager.m */; };
 		A4ECBFB623E5AE9F006D1D39 /* SwiftUIButtonProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ECBFB523E5AE9F006D1D39 /* SwiftUIButtonProxy.swift */; };
+		A4ECBFB823E5B11D006D1D39 /* SwiftUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ECBFB723E5B11D006D1D39 /* SwiftUIButton.swift */; };
 		D09AC418CFA370915D5D5B8F /* libPods-ReactNativeWithSwiftUITutorial.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7F1AF34A57AF2F9D73C3A2 /* libPods-ReactNativeWithSwiftUITutorial.a */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		A4ECBFB223E5A02F006D1D39 /* SwiftUIButtonManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwiftUIButtonManager.m; sourceTree = "<group>"; };
 		A4ECBFB423E5AE9F006D1D39 /* ReactNativeWithSwiftUITutorial-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReactNativeWithSwiftUITutorial-Bridging-Header.h"; sourceTree = "<group>"; };
 		A4ECBFB523E5AE9F006D1D39 /* SwiftUIButtonProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIButtonProxy.swift; sourceTree = "<group>"; };
+		A4ECBFB723E5B11D006D1D39 /* SwiftUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIButton.swift; sourceTree = "<group>"; };
 		AB60AC00395B4E2F69C0A812 /* Pods-ReactNativeWithSwiftUITutorial-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeWithSwiftUITutorial-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativeWithSwiftUITutorial-tvOS/Pods-ReactNativeWithSwiftUITutorial-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		B1DBBC242F1F78D5A6C2C8AF /* Pods-ReactNativeWithSwiftUITutorial-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeWithSwiftUITutorial-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativeWithSwiftUITutorial-tvOSTests/Pods-ReactNativeWithSwiftUITutorial-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BF5DC3D67BC0ACCC77F8B6FD /* Pods-ReactNativeWithSwiftUITutorialTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeWithSwiftUITutorialTests.release.xcconfig"; path = "Target Support Files/Pods-ReactNativeWithSwiftUITutorialTests/Pods-ReactNativeWithSwiftUITutorialTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 			children = (
 				A4ECBFB223E5A02F006D1D39 /* SwiftUIButtonManager.m */,
 				A4ECBFB523E5AE9F006D1D39 /* SwiftUIButtonProxy.swift */,
+				A4ECBFB723E5B11D006D1D39 /* SwiftUIButton.swift */,
 				A4ECBFB423E5AE9F006D1D39 /* ReactNativeWithSwiftUITutorial-Bridging-Header.h */,
 			);
 			path = SwiftUIButtonComponent;
@@ -290,6 +293,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4ECBFB823E5B11D006D1D39 /* SwiftUIButton.swift in Sources */,
 				A4ECBFB623E5AE9F006D1D39 /* SwiftUIButtonProxy.swift in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				A4ECBFB323E5A02F006D1D39 /* SwiftUIButtonManager.m in Sources */,
@@ -322,6 +326,7 @@
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = J966JLDEF9;
 				INFOPLIST_FILE = ReactNativeWithSwiftUITutorial/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -346,6 +351,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = J966JLDEF9;
 				INFOPLIST_FILE = ReactNativeWithSwiftUITutorial/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
