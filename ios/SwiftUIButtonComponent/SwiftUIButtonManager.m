@@ -23,9 +23,9 @@ RCT_EXPORT_VIEW_PROPERTY(count, NSNumber);
 RCT_EXPORT_VIEW_PROPERTY(onCountChange, RCTBubblingEventBlock);
 
 - (UIView *)view {
-  // For now, we can just export an empty UIView.
-  // In the later chapters of this tutorial this will be changed.
-  return [[SwiftUIButtonProxy alloc] init];
+  // Export the UIHostingController's view (SwiftUIButton.swift)
+  SwiftUIButtonProxy *proxy = [[SwiftUIButtonProxy alloc] init];
+  return proxy.vc.view;
 }
 
 @end
