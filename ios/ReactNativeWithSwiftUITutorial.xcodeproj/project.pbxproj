@@ -12,6 +12,7 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		A4ECBFB323E5A02F006D1D39 /* SwiftUIButtonManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A4ECBFB223E5A02F006D1D39 /* SwiftUIButtonManager.m */; };
+		A4ECBFB623E5AE9F006D1D39 /* SwiftUIButtonProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ECBFB523E5AE9F006D1D39 /* SwiftUIButtonProxy.swift */; };
 		D09AC418CFA370915D5D5B8F /* libPods-ReactNativeWithSwiftUITutorial.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7F1AF34A57AF2F9D73C3A2 /* libPods-ReactNativeWithSwiftUITutorial.a */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,8 @@
 		43834F057B9C2A1A91084D55 /* Pods-ReactNativeWithSwiftUITutorial-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeWithSwiftUITutorial-tvOS.release.xcconfig"; path = "Target Support Files/Pods-ReactNativeWithSwiftUITutorial-tvOS/Pods-ReactNativeWithSwiftUITutorial-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		8F828CC4C4EB571E794514A6 /* libPods-ReactNativeWithSwiftUITutorialTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeWithSwiftUITutorialTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4ECBFB223E5A02F006D1D39 /* SwiftUIButtonManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwiftUIButtonManager.m; sourceTree = "<group>"; };
+		A4ECBFB423E5AE9F006D1D39 /* ReactNativeWithSwiftUITutorial-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReactNativeWithSwiftUITutorial-Bridging-Header.h"; sourceTree = "<group>"; };
+		A4ECBFB523E5AE9F006D1D39 /* SwiftUIButtonProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIButtonProxy.swift; sourceTree = "<group>"; };
 		AB60AC00395B4E2F69C0A812 /* Pods-ReactNativeWithSwiftUITutorial-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeWithSwiftUITutorial-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativeWithSwiftUITutorial-tvOS/Pods-ReactNativeWithSwiftUITutorial-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		B1DBBC242F1F78D5A6C2C8AF /* Pods-ReactNativeWithSwiftUITutorial-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeWithSwiftUITutorial-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativeWithSwiftUITutorial-tvOSTests/Pods-ReactNativeWithSwiftUITutorial-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BF5DC3D67BC0ACCC77F8B6FD /* Pods-ReactNativeWithSwiftUITutorialTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeWithSwiftUITutorialTests.release.xcconfig"; path = "Target Support Files/Pods-ReactNativeWithSwiftUITutorialTests/Pods-ReactNativeWithSwiftUITutorialTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -134,6 +137,8 @@
 			isa = PBXGroup;
 			children = (
 				A4ECBFB223E5A02F006D1D39 /* SwiftUIButtonManager.m */,
+				A4ECBFB523E5AE9F006D1D39 /* SwiftUIButtonProxy.swift */,
+				A4ECBFB423E5AE9F006D1D39 /* ReactNativeWithSwiftUITutorial-Bridging-Header.h */,
 			);
 			path = SwiftUIButtonComponent;
 			sourceTree = "<group>";
@@ -184,6 +189,12 @@
 			attributes = {
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = Facebook;
+				TargetAttributes = {
+					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = J966JLDEF9;
+						LastSwiftMigration = 1130;
+					};
+				};
 			};
 			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "ReactNativeWithSwiftUITutorial" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -279,6 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4ECBFB623E5AE9F006D1D39 /* SwiftUIButtonProxy.swift in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				A4ECBFB323E5A02F006D1D39 /* SwiftUIButtonManager.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
@@ -305,9 +317,10 @@
 			baseConfigurationReference = E4FF8559913FCA11EC2060D3 /* Pods-ReactNativeWithSwiftUITutorial.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = J966JLDEF9;
 				INFOPLIST_FILE = ReactNativeWithSwiftUITutorial/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -317,6 +330,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ReactNativeWithSwiftUITutorial;
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftUIButtonComponent/ReactNativeWithSwiftUITutorial-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -326,8 +342,9 @@
 			baseConfigurationReference = CD298BA28F2A90263D9498A3 /* Pods-ReactNativeWithSwiftUITutorial.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = J966JLDEF9;
 				INFOPLIST_FILE = ReactNativeWithSwiftUITutorial/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -337,6 +354,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ReactNativeWithSwiftUITutorial;
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftUIButtonComponent/ReactNativeWithSwiftUITutorial-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
